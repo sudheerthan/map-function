@@ -8,7 +8,6 @@ float map_func(float value, float s_min, float s_max, float d_min, float d_max)
 {
     float s_out = s_max - s_min;
     float d_out = d_max - d_min;
-    //float t_out = value * d_out / s_out;
     float scale = (value - s_min) / s_out;
     float t_out = (d_min + scale * d_out );
     return t_out;
